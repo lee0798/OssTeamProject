@@ -3,12 +3,12 @@ console.log()
 //variable: const let var
 const a=5;
 const b=2;
-const MyName="dohwan";
+const MyName="dohwan lee";
 console.log(a+b);
 console.log(a*b);
 console.log(a/b);
 console.log("hello "+MyName);
-let MyName="dohwan";
+let MyName="dohwan lee";
 console.log("hello "+MyName);
 MyName="dohwanee"; 
 console.log("hello "+MyName);
