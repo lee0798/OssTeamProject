@@ -42,6 +42,7 @@ h1.addEventListener("click", handleTitleClick);
 //window.addEventListener("copy", handleWindowCopy);
 //window.addEventListener("offline", handleWindowOffline);
 //window.addEventListener("online", handleWindowOnline);
+// js 파일도 여러개로 나뉠거에요
 
 
 
