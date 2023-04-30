@@ -7,11 +7,11 @@ const MyName="dohwan lee";
 console.log(a+b);
 console.log(a*b);
 console.log(a/b);
-console.log("hello "+MyName);
+console.log("Hello "+MyName);
 let MyName="dohwan lee";
-console.log("hello "+MyName);
+console.log("Hello "+MyName);
 MyName="dohwanee"; 
-console.log("hello "+MyName);
+console.log("Hello "+MyName);
 //boolean true false null 
 const amIFat = true;
 const amIFat1 = null;
@@ -61,15 +61,15 @@ const age =prompt("How old are you?");
 
 console.log(typeof age,typeof parseInt(age));
 //if else
-const age = parseInt(prompt("how old are you?"));
+const age = parseInt(prompt("How old are you?"));
 console.log(isNaN(age));
 if(isNaN(age))
 {
-    console.log("please write number");
+    console.log("Please write number");
 }else if(age===100){
-    console.log("wow you are wise");
+    console.log("Wow you are wise");
 }else if(age<18 || age>50){
-    console.log("you are too young,too old");
+    console.log("You are too young,too old");
 }else{
-    console.log("you can drink");
+    console.log("You can drink");
 }
