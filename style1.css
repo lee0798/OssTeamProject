@@ -1,3 +1,17 @@
-body{
+body
+{
     background-color: beige;
+}
+
+h1 {
+    color: cornflowerblue;
+    transition:color .5s ease-in-out;
+}
+
+.clicked {
+    color: tomato;
+}
+
+.sexy-font {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
