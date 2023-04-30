@@ -9,6 +9,8 @@ function handleTitleClick(){
     }
 }
 
+// event 생성했던 거 그냥 지우기 아쉬워서 주석 처리 해뒀어요!
+
 //function handleMouseEnter(){
 //    h1.innerText = "Mouse is here!";
 //}
