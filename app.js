@@ -1,12 +1,7 @@
 const h1 = document.querySelector("div.hello:first-child h1");
 
 function handleTitleClick(){
-    const clickedClass = "clicked";
-    if(h1.className === clickedClass) {
-     h1.className = "";
-    }else{
-     h1.className = clickedClass;
-    }
+    h1.classList.toggle("clicked");
 }
 
 // event 생성했던 거 그냥 지우기 아쉬워서 주석 처리 해뒀어요!
