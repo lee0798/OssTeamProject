@@ -38,20 +38,14 @@ const quotes = [
   },
 ];
 
-const images = [
-  "0.jpeg"
-]
 const quoteDiv = document.querySelector('#quote')
 const quote = document.querySelector("#quote p:first-child");
 const author = document.querySelector("#quote span:last-child");
-const bgImage = document.querySelector('#quote img')
 const calendarhead = document.getElementsByClassName('header')
 
 function changeQuote(){
-const choseImage = images[Math.floor(Math.random() * images.length)]
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-bgImage.src = `img/${choseImage}`;
 
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;

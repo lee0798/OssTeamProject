@@ -10,12 +10,12 @@ document.body.appendChild(bgImage);*/
 const images = [
     "0.jpeg"
   ]
-const quoteDiv = document.querySelector('#modal_box')
-const bgImage = document.querySelector('#modal_box img')
+const modalImage = document.getElementById('modal_box')
 function changeQuote1(){
     const choseImage = images[Math.floor(Math.random() * images.length)];
     
-    bgImage.src = `img/${choseImage}`;
+    modalImage.style.backgroundImage = "url(img/"+choseImage+")";
+    console.log(choseImage);
     }
-    
+  
     window.addEventListener('load', changeQuote1)
