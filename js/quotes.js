@@ -17,10 +17,6 @@ const quotes = [
     author: "Helen Keller",
   },
   {
-    quote: "To Travel is to Live",
-    author: "Hans Christian Andersen",
-  },
-  {
     quote: "Only a life lived for others is a life worthwhile.",
     author: "Albert Einstein",
   },
@@ -29,7 +25,7 @@ const quotes = [
     author: "Mae West",
   },
   {
-    quote: "Never go on trips with anyone you do not love.",
+    quote: "Never go on trips with anyone you do ntot love.",
     author: "Hemmingway",
   },
   {
@@ -42,9 +38,23 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
+const images = [
+  "0.jpeg"
+]
+const quoteDiv = document.querySelector('#quote')
+const quote = document.querySelector("#quote p:first-child");
 const author = document.querySelector("#quote span:last-child");
+const bgImage = document.querySelector('#quote img')
+const calendarhead = document.getElementsByClassName('header')
+
+function changeQuote(){
+const choseImage = images[Math.floor(Math.random() * images.length)]
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+bgImage.src = `img/${choseImage}`;
 
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
+}
+
+window.addEventListener('load', changeQuote)
