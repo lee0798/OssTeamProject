@@ -36,6 +36,7 @@ const quotes = [
     author: "겨울왕국",
   },
 ];
+//수정 완료했습니다. - 이하나
 
 const quoteDiv = document.querySelector('#quote')
 const quote = document.querySelector("#quote p:first-child");
