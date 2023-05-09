@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css"/>
+    <title>Disney Project</title>
+</head>
+<body>
+  <div id="modal_box">
+    <div id="mainTitle" style="display: flex; margin-bottom: 10px;">
+        <b><span id="geeting" style="font-size: 2rem;">Welcome to Disney calendar</span></b>
+        <form id="login-form" class="hiden">
+            <input
+             id="in"
+             required
+             maxlength="15" 
+             type="text"
+             placeholder="what is your name?" />
+        </form>
+    </div>
+<div style="display: flex; margin-left: 30px;">
+    <div>
+     <div id="clockDiv">
+         <span id="clock">00:00:00</span>
+         <div id="weather" style="padding-top: 6px;">
+            <span style="font-size: 1.4rem; "></span>
+            <span style="color: gray"></span>
+         </div>
+     </div>
+
+     <div id="todo-list">
+        <h2 id="todo-title">달력 선택</h2>
+        <hr>
+        <ul id="todo-task"></ul>
+      <form id="todo-form">
+          <input 
+          id="todoInput"
+          type="text"
+          placeholder="Enter New Task"
+          />
+        </form>
+     </div>
+
+     <div id="quote">
+        <div id="user-image">
+        </div>
+        <div id="user-text">
+            <p></p>
+            <span ></span>
+        </div>
+    </div>
+    </div>
+
+    <div class='rap'>
+        <div class="header">
+           <div class="btn prevDay"></div>
+           <h2 class='dateTitle'></h2>
+           <div class="btn nextDay"></div>
+        </div>
+        
+        <div class="grid dateHead">
+            <div><sapn style="color: red">Sun</sapn></div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wen</div>
+            <div>Thr</div>
+            <div>Fri</div>
+            <div><sapn style="color: blue">Sat</sapn></div>
+        </div>
+        
+        <div class="grid dateBoard"></div>
+    </div>
+</div>
+</div>
+    
+     <script src="js/clock.js"></script>
+     <script src="js/login.js"></script>
+     <script src="js/calender.js"></script>
+     <script src="js/quotes.js"></script>
+     <script src="js/weather.js"></script>
+     <script src="js/background.js"></script>
+</body>
+</html>
