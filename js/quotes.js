@@ -52,3 +52,4 @@ author.innerText = "-" + todaysQuote.author + "-";
 }
 
 window.addEventListener('load', changeQuote)
+// 코드 확인했습니다. -이승현
