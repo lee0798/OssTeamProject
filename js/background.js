@@ -23,3 +23,5 @@ function changePic(){
     }
   
     window.addEventListener('load', changePic)
+
+//code-reivew 완료했습니다. - 이하나
