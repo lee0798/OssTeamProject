@@ -50,3 +50,5 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+
+// 코드 확인했습니다. -이승현
