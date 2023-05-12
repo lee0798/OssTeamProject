@@ -1,0 +1,19 @@
+body
+{
+    background-color: rgb(220, 224, 245);
+}
+
+h1 {
+    color: cornflowerblue;
+    transition:color .5s ease-in-out;
+}
+
+.clicked {
+    color: tomato;
+}
+
+.sexy-font {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* 코드 확인했습니다.-*/
+// 코드 리뷰 완료했습니다. - 이하나
