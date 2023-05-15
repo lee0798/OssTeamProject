@@ -177,3 +177,5 @@ makeCalendar(date);
 toDoForm.addEventListener('submit', handlerToDoSubmit)
 prev.addEventListener('click', prevMonth)
 next.addEventListener('click', nextMonth)
+
+// 코드확인했습니다. -이승현
