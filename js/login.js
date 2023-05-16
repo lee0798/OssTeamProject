@@ -30,3 +30,4 @@ window.addEventListener('load',()=>{
     }
 })
     
+// 코드확인했습니다. -이승현
