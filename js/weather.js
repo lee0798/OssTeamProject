@@ -18,3 +18,5 @@ function onGeoError() {
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+
+// 코드 확인했습니다. -이승현
