@@ -203,3 +203,20 @@ padding-top: 10px;
   backdrop-filter: blur(3px);
   box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.3);
 }
+
+#ottLink{
+  width: 600px;
+  height: 500px;
+  position: relative;
+  }
+
+.ottBackdrop{
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+  backdrop-filter: blur(3px);
+  box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.3);
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
