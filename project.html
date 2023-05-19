@@ -1,111 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-    <title>Disney Project</title>
-</head>
-<body id="body">
-  <div id="modal_box">
-    <div id="mainTitle" style="display: flex; margin-bottom: 10px;">
-        <b><span id="geeting" style="font-size: 2rem;">Welcome to Disney calendar</span></b>
-        <form id="login-form" class="hiden">
-            <input
-             id="in"
-             required
-             maxlength="15" 
-             type="text"
-             placeholder="what is your name?" />
-        </form>
-    </div>
-<div style="display: flex; margin-left: 30px;">
-    <div>
-     <div id="clockDiv">
-         <span id="clock">00:00:00</span>
-         <div id="weather" style="padding-top: 6px;">
-            <span style="font-size: 1.4rem; "></span>
-            <span style="color: gray"></span>
-         </div>
-     </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="project.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+        <title>Disney Project</title>
+    </head>
 
-     <div id="todo-list">
-        <h2 id="todo-title">달력 선택</h2>
-        <hr>
-        <ul id="todo-task"></ul>
-      <form id="todo-form">
-          <input 
-          id="todoInput"
-          type="text"
-          placeholder="Enter New Task"
-          />
-        </form>
-     </div>
 
-     <div id="quote" class="backdrop" style="display: flex; justify-content: center;align-items:center;">
-        <div id="user-image" style="bottom: 25%"></div>
-        <div id="user-text" style="bottom: 25%">
-            <p style="font-size: 1.15rem; font-family:'Nanum Gothic Coding', monospace;"></p>
-            <span style="font-size: 1.15rem; font-family:'Nanum Gothic Coding', monospace;" ></span>
-        </div>
-    </div>
+    <body id="body">
+        <div id="main">
+            <div id="top">
+                <div id="mainTitle" style="display: flex; margin-bottom: 10px;">
+                    <b><span id="geeting" style="font-size: 2rem;">Welcome to Disney calendar</span></b>
+                    <form id="login-form" class="hiden">
+                        <input
+                        id="in"
+                        required
+                        maxlength="15" 
+                        type="text"
+                        placeholder="what is your name?" />
+                    </form>
+                </div>
+            </div>
 
-    </div>
 
-    <div class='rap'>
-        <div class="header">
-           <div class="btn prevDay"></div>
-           <h2 class='dateTitle'></h2>
-           <div class="btn nextDay"></div>
-        </div>
+            <div id="bottom">
+                <div id="left">
+                    <div style="display: flex; margin-left: 30px;">
+                        <div>
+                            <div id="clockDiv">
+                                <span id="clock">00:00:00</span>
+                                <div id="weather" style="padding-top: 6px;">
+                                    <span style="font-size: 1.4rem; "></span>
+                                    <span style="color: gray"></span>
+                                </div>
+                            </div>
+    
+                    
+                            <div id="todo-list">
+                                <h2 id="todo-title">달력 선택</h2>
+                                <hr>
+                                    <ul id="todo-task"></ul>
+                                    <form id="todo-form">
+                                        <input 
+                                        id="todoInput"
+                                        type="text"
+                                        placeholder="Enter New Task"
+                                        />
+                                    </form>
+                                </hr>
+                            </div>
+    
+    
+                            <div id="quote" class="backdrop" style="display: flex; justify-content: center;align-items:center;">
+                                <div id="user-image" style="bottom: 25%"></div>
+                                <div id="user-text" style="bottom: 25%">
+                                    <p style="font-size: 1.15rem; font-family:'Nanum Gothic Coding', monospace;"></p>
+                                    <span style="font-size: 1.15rem; font-family:'Nanum Gothic Coding', monospace;" ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class='center'>
+                    <div class="header">
+                        <div class="btn prevDay"></div>
+                        <h2 class='dateTitle'></h2>
+                        <div class="btn nextDay"></div>
+                    </div>
         
-        <div class="grid dateHead">
-            <div><sapn style="color: red">Sun</sapn></div>
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Wen</div>
-            <div>Thr</div>
-            <div>Fri</div>
-            <div><sapn style="color: blue">Sat</sapn></div>
+    
+                    <div class="grid dateHead">
+                        <div><sapn style="color: red">Sun</sapn></div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wen</div>
+                        <div>Thr</div>
+                        <div>Fri</div>
+                        <div><sapn style="color: blue">Sat</sapn></div>
+                    </div>
+    
+    
+                    <div class="grid dateBoard"></div>
+
+                    <div class="youtube-box">
+                        <iframe
+                        id="mainframe"
+                        src=""
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+    
+    
+                <div class="right">
+                    <div class="ottBackdrop">
+                        <a href="https://www.disneyplus.com" target="_blank" class="ottLink">
+                            <img src="otticon/disney.png" alt="Disney" style="width: 50px; height: 50px;">
+                        </a>
+                        <a href="https://www.netflix.com/kr/" target="_blank" class="ottLink">
+                            <img src="otticon/netflix.png" alt="Netflix" style="width: 50px; height: 50px;">
+                        </a>
+                        <a href="https://www.watcha.com" target="_blank" class="ottLink">
+                            <img src="otticon/watcha.png" alt="Watcha" style="width: 50px; height: 50px;">
+                        </a>
+                        <a href="https://www.coupangplay.com" target="_blank" class="ottLink">
+                            <img src="otticon/coupang.png" alt="Disney" style="width: 50px; height: 50px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="grid dateBoard"></div>
-        <div class="youtube-box" style="position: absolute; top:90%;left:28%;margin: -50px 0 0 -50px;">
-            <iframe
-              id="mainframe"
-              src=""
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-    </div>
 
-    <div class="ottBackdrop">
-        <a href="https://www.disneyplus.com" target="_blank" class="ottLink">
-            <img src="otticon/disney.png" alt="Disney" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://www.netflix.com/kr/" target="_blank" class="ottLink">
-            <img src="otticon/netflix.png" alt="Netflix" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://www.watcha.com" target="_blank" class="ottLink">
-            <img src="otticon/watcha.jpg" alt="Watcha" style="width: 50px; height: 50px;">
-        </a> 
-    </div>
-    
 
-    
+        
 
-</div>
-</div>
-     <script src="js/ott.js"></script>
-     <script src="js/clock.js"></script>
-     <script src="js/login.js"></script>
-     <script src="js/calender.js"></script>
-     <script src="js/quotes.js"></script>
-     <script src="js/weather.js"></script>
-     <script src="js/background.js"></script>
-     <script src="js/youtube.js"></script>
-</body>
+
+        <script src="js/ott.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/calender.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/youtube.js"></script>
+
+
+    </body>
 </html>
