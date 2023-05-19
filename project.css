@@ -204,13 +204,18 @@ padding-top: 10px;
   box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.3);
 }
 
-#ottLink{
-  width: 600px;
-  height: 500px;
-  position: relative;
-  }
+.ottLink {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .ottBackdrop{
+  width:250px;
+  height:600px;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 30px;
   backdrop-filter: blur(3px);
