@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # OssTeamProject by using git,gitbash
-# MAKE a WEB CALENDAR
+# MAKE  A WEB CALENDAR
 # hufs CSE teamproject
 =======
 # Web_Project(Frontend)
