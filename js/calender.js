@@ -50,16 +50,18 @@ const makeCalendar = (item) =>{
         i === today?
         htmlDummy += `<div onclick="changeTitle(${i}, ${currnetYear}, ${currnetMonth})">
         ${`<span style="color:red">${i}</span>`}
-        <p>
+        <div style="background-color: #c0baba71;backdrop-filter: blur(3px);position: absolute; left: 0%; right: 0%; top:0%; min-height: 1.2rem; padding: 6px; z-index: -1;">
+        <p style="z-index: 1">
         ${calendarItem(date)}
-        </p>
+        </p></div>
         </div>`
         :
         htmlDummy += `<div onclick="changeTitle(${i}, ${currnetYear}, ${currnetMonth})">
         ${`<span>${i}</span>`}
-        <p style="color:red"; >
+        <div style="background-color: #c0baba71;backdrop-filter: blur(3px);position: absolute; left: 0%; right: 0%; top:0%; min-height: 1.2rem; padding: 6px; z-index: -1;">
+        <p style="color:red; z-index: 1"; >
         ${calendarItem(date)}
-        </p>
+        </p></div>
         </div>`
 
         
