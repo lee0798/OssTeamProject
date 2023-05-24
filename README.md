@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # OssTeamProject by using git,gitbash
 # MAKE  A DISNEY WEB CALENDAR and TODO-LIST
-# HUFS CSE teamproject 13
+# HUFS CSE teamproject 13.
 # Using Javascript
 =======
 # Web_Project(Frontend)
