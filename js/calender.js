@@ -130,6 +130,11 @@ function deleteToDo(e){
   makeCalendar(date);
 }
 
+function completeToDo(e){
+    const li = e.target.parentElement;
+    li.setAttribute("style", "text-decoration:line-through;")
+}
+
 function nullToDo(){
     const task = document.querySelector('#todo-task')
     while(task.firstChild){
@@ -151,13 +156,20 @@ function paintToDo(newTodo){
     }  
   })
   const button = document.createElement('button')
+  const completebutton = document.createElement('button')
   button.style.border = 'none'
-  button.style.backgroundColor='white'
+  completebutton.style.border = 'none'
+  button.style.backgroundColor='rgba(221, 215, 215, 0.607)'
+  completebutton.style.backgroundColor = "rgba(221, 215, 215, 0.607)"
   button.style.marginLeft = '10px'
+  completebutton.style.marginLeft = '14px'
   button.innerText = "❌";
+  completebutton.innerText = "✔";
   button.addEventListener('click',deleteToDo)
+  completebutton.addEventListener('click', completeToDo)
   li.appendChild(span);
   li.appendChild(button);
+  li.appendChild(completebutton);
   toDoList.appendChild(li)
 }
 
