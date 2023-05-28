@@ -7,7 +7,7 @@ function calendarItem(date){
     const check = localStorage.getItem(date)
     if(check !== null && check.length > 2){
         console.log(check.length)
-      return '<br>&nbsp;&nbsp;✔'
+        return '<br>&nbsp;&nbsp;✔'
     }
     else {
         return ''
