@@ -150,7 +150,7 @@ padding-top: 10px;
 }
 
 .noColor {
-  background: #eee;
+  background: rgba(221, 215, 215, 0.607);
 }
 
 .header {
