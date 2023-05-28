@@ -7,7 +7,7 @@ function calendarItem(date){
     const check = localStorage.getItem(date)
     if(check !== null && check.length > 2){
         console.log(check.length)
-        return '<br>&nbsp;&nbsp;✔'
+      return '<br>&nbsp;&nbsp;✔'
     }
     else {
         return ''
@@ -48,7 +48,7 @@ const makeCalendar = (item) =>{
         const date = `${currnetYear}-${currnetMonth.pad()}-${i.pad()}`
 
         i === today?
-        htmlDummy += `<div onclick="changeTitle(${i}, ${currnetYear}, ${currnetMonth})">
+        htmlDummy += `<div onclick="changeTitle(${i}, ${currnetYear}, ${currnetMonth})" style="position: relative;">
         ${`<span style="color:red">${i}</span>`}
         <div style="background-color: #c0baba71;backdrop-filter: blur(3px);position: absolute; left: 0%; right: 0%; top:0%; min-height: 1.2rem; padding: 6px; z-index: -1;">
         <p style="z-index: 1">
@@ -56,7 +56,7 @@ const makeCalendar = (item) =>{
         </p></div>
         </div>`
         :
-        htmlDummy += `<div onclick="changeTitle(${i}, ${currnetYear}, ${currnetMonth})">
+        htmlDummy += `<div onclick="changeTitle(${i}, ${currnetYear}, ${currnetMonth})" style="position: relative">
         ${`<span>${i}</span>`}
         <div style="background-color: #c0baba71;backdrop-filter: blur(3px);position: absolute; left: 0%; right: 0%; top:0%; min-height: 1.2rem; padding: 6px; z-index: -1;">
         <p style="color:red; z-index: 1"; >
