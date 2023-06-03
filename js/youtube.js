@@ -29,4 +29,3 @@ function changeIframeUrl(){
 
 window.addEventListener('load', changeIframeUrl)
 
-/*코드 리뷰했습니다. - 이하나*/
