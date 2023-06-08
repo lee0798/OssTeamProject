@@ -12,7 +12,7 @@ function onLoginSubmitClick(event){
 }
 
 function painGreeting(username){
-  greeting.innerText = "Welcome to Diney calendar princess " + username
+  greeting.innerText = "Welcome to Disney calendar princess " + username
 }
 
 const savedUsername = localStorage.getItem(USERNAME)
