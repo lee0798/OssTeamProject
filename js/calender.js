@@ -132,7 +132,7 @@ function deleteToDo(e){
 
 function completeToDo(e){
     const li = e.target.parentElement;
-    li.setAttribute("style", "text-decoration:line-through;")
+    li.classList.toggle("line");
 }
 
 function nullToDo(){
