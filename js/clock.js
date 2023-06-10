@@ -11,5 +11,3 @@ getClock();
 
 setInterval(getClock, 1000)  // 5초마다 반복호출
 //setTimeout(sayHello, 5000)  // 5초뒤에 호출
-
-// 코드 확인했습니다. -이승현
