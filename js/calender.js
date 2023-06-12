@@ -1,4 +1,4 @@
-// pad method
+// pad method 검토
 Number.prototype.pad = function() {
     return this > 9 ? this : '0' + this;
   }
