@@ -4,7 +4,7 @@ ottLinks.forEach(link => {
     window.open(link.href, '_blank');
   });
 });
-
+//확인 완료
 
 
 
