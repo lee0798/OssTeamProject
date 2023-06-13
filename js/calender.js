@@ -120,6 +120,7 @@ function saveToDos(){
     makeCalendar(date);
 }
 
+// 원하는 to-do 지우기
 function deleteToDo(e){
   // 클릭한 버튼의 부모엘리먼트를 삭제
   const li = e.target.parentElement;
@@ -130,6 +131,7 @@ function deleteToDo(e){
   makeCalendar(date);
 }
 
+// 완료한 to-do에 완료 표시하는 toggle 추가하기.(css에 line 정의함.)
 function completeToDo(e){
     const li = e.target.parentElement;
     li.classList.toggle("line");
