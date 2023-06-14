@@ -51,3 +51,4 @@ author.innerText = "-" + todaysQuote.author + "-";
 }
 
 window.addEventListener('load', changeQuote)
+//검토 완료
